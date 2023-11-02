@@ -1,4 +1,4 @@
-# atlas-actions-its
+# atlas-scripts-its
 Sammelung an Scripten für den [Atlas Discord-Bot](https://atlas.bot)
 
 ## Gruppenmanagement
