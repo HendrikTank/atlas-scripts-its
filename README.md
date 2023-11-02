@@ -5,5 +5,5 @@ Die Scripts können direkt als .action file importiert werden.
 
 
 ## Gruppenmanagement
-Beinhaltt zwei Kontextmenu Actions, welche Moderatoren von Lerngruppen die Mitgliederverwaltung ohne `MANAGE ROLES` oder `ADMINISTRATOR` Permission ermöglicht
+Beinhaltt eine Kontextmenu Actions, welche Moderatoren von Lerngruppen die Mitgliederverwaltung ohne `MANAGE ROLES` oder `ADMINISTRATOR` Permission ermöglicht
 
