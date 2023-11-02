@@ -7,7 +7,7 @@
       "trigger": {
         "type": "ContextMenu",
         "targetType": "User",
-        "name": "Gruppe 1 hinzufügen/entfernen"
+        "name": "Gruppe hinzufügen/entfernen"
       },
       "disabled": false,
       "name": "Gruppe 1 hinzufügen/entfernen",
