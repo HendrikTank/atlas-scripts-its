@@ -1,0 +1,21 @@
+{
+  "comment": "Exported from https://atlas.bot",
+  "formatVersion": 2,
+  "exportedAt": "2023-11-02T13:57:13.257Z",
+  "actions": [
+    {
+      "trigger": {
+        "type": "ContextMenu",
+        "targetType": "User",
+        "name": "Zur Gruppe hinzufügen"
+      },
+      "disabled": false,
+      "name": "Zur Gruppe hinzufügen",
+      "content": "{responder.ephemeral}\r\n\r\n{if;{user.roles;{$targetId}};includes;{role.id;Gruppe 1};{responder.text;{user.username;{$targetId}} ist bereits Mitglied der Gruppe 1.};{=hasGroup;true}}\r\n\r\n[#if;{$hasGroup}]\r\n    {responder.text;{user.username;{$targetId}} wurde zur Gruppe 1 hinzugefügt.}\r\n    {user.addRole;{role.name;Gruppe 1};{$targetId}}\r\n[/if]",
+      "cooldownSeconds": 0,
+      "cooldownType": "User",
+      "restriction": null,
+      "flags": "0"
+    }
+  ]
+}

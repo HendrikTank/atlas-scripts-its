@@ -1,0 +1,21 @@
+{
+  "comment": "Exported from https://atlas.bot",
+  "formatVersion": 2,
+  "exportedAt": "2023-11-02T13:57:18.197Z",
+  "actions": [
+    {
+      "trigger": {
+        "type": "ContextMenu",
+        "targetType": "User",
+        "name": "Aus Gruppe entfernen"
+      },
+      "disabled": false,
+      "name": "Aus Gruppe entfernen",
+      "content": "{responder.ephemeral}\r\n\r\n{=hasGroup;false}\r\n\r\n{if;{user.roles;{$targetId}};includes;{role.id;Gruppe 1};{=hasGroup;true};{responder.text;{user.username;{$targetId}} ist kein Mitglied der Gruppe 1.}}\r\n\r\n[#if;{$hasGroup}]\r\n    {responder.text;{user.username;{$targetId}} wurde aus der Gruppe 1 entfernt.}\r\n    {user.removeRole;{role.name;Gruppe 1};{$targetId}}\r\n[/if]",
+      "cooldownSeconds": 0,
+      "cooldownType": "User",
+      "restriction": null,
+      "flags": "0"
+    }
+  ]
+}
