@@ -1,0 +1,35 @@
+{
+  "comment": "Exported from https://atlas.bot",
+  "formatVersion": 2,
+  "exportedAt": "2023-11-02T16:21:25.946Z",
+  "actions": [
+    {
+      "trigger": {
+        "type": "ContextMenu",
+        "targetType": "User",
+        "name": "Gruppe 1 hinzufügen/entfernen"
+      },
+      "disabled": false,
+      "name": "Gruppe 1 hinzufügen/entfernen",
+      "content": "{responder.ephemeral}\r\n\r\n{if;{user.roles;{$targetId}};includes;{role.id;LernGruppe 1};{=hasGroup;true};{=hasGroup;false}}\r\n\r\n[#if;{$hasGroup};==;true]\r\n    {responder.text;{user.username;{$targetId}} wurde aus der Gruppe 1 entfernt.}\r\n    {user.removeRole;{role.name;LernGruppe 1};{$targetId}}\r\n[/if]\r\n\r\n\r\n\r\n[#if;{$hasGroup};==;false]\r\n    {responder.text;{user.username;{$targetId}} wurde zur Gruppe 1 hinzugefügt.}\r\n    {user.addRole;{role.name;LernGruppe 1};{$targetId}}\r\n[/if]",
+      "cooldownSeconds": 0,
+      "cooldownType": "User",
+      "restriction": {
+        "permissions": "0",
+        "role": {
+          "mode": "Whitelist",
+          "value": [
+            "1165712036513194075",
+            "1168236584764702821",
+            "1169649393243258890"
+          ]
+        },
+        "channel": {
+          "mode": "Blacklist",
+          "value": []
+        }
+      },
+      "flags": "128"
+    }
+  ]
+}
